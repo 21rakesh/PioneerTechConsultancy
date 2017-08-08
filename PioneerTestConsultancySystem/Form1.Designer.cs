@@ -107,6 +107,11 @@
             this.CompanyDetails = new System.Windows.Forms.DataGridView();
             this.TechnicalDetails = new System.Windows.Forms.DataGridView();
             this.EmployeeDetails = new System.Windows.Forms.DataGridView();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.Technical_Details.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -874,6 +879,11 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPage8.Controls.Add(this.label32);
+            this.tabPage8.Controls.Add(this.label31);
+            this.tabPage8.Controls.Add(this.label25);
+            this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Controls.Add(this.label20);
             this.tabPage8.Controls.Add(this.ProjectDetails);
             this.tabPage8.Controls.Add(this.EducationalDetails);
             this.tabPage8.Controls.Add(this.Show);
@@ -893,7 +903,7 @@
             // 
             this.ProjectDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ProjectDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProjectDetails.Location = new System.Drawing.Point(49, 509);
+            this.ProjectDetails.Location = new System.Drawing.Point(49, 545);
             this.ProjectDetails.Name = "ProjectDetails";
             this.ProjectDetails.RowTemplate.Height = 24;
             this.ProjectDetails.Size = new System.Drawing.Size(517, 150);
@@ -903,7 +913,7 @@
             // 
             this.EducationalDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EducationalDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EducationalDetails.Location = new System.Drawing.Point(610, 312);
+            this.EducationalDetails.Location = new System.Drawing.Point(610, 338);
             this.EducationalDetails.Name = "EducationalDetails";
             this.EducationalDetails.RowTemplate.Height = 24;
             this.EducationalDetails.Size = new System.Drawing.Size(483, 150);
@@ -942,7 +952,7 @@
             // 
             this.CompanyDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CompanyDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CompanyDetails.Location = new System.Drawing.Point(49, 312);
+            this.CompanyDetails.Location = new System.Drawing.Point(53, 338);
             this.CompanyDetails.Name = "CompanyDetails";
             this.CompanyDetails.RowTemplate.Height = 24;
             this.CompanyDetails.Size = new System.Drawing.Size(517, 150);
@@ -968,6 +978,56 @@
             this.EmployeeDetails.RowTemplate.Height = 24;
             this.EmployeeDetails.Size = new System.Drawing.Size(517, 200);
             this.EmployeeDetails.TabIndex = 1;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.Olive;
+            this.label20.Location = new System.Drawing.Point(45, 68);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(156, 20);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Employee Details";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Olive;
+            this.label24.Location = new System.Drawing.Point(610, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(156, 20);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Technical Details";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Olive;
+            this.label25.Location = new System.Drawing.Point(49, 315);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(152, 20);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "Company Details";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Olive;
+            this.label31.Location = new System.Drawing.Point(614, 315);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(173, 20);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "Educational Details";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Olive;
+            this.label32.Location = new System.Drawing.Point(53, 522);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(135, 20);
+            this.label32.TabIndex = 13;
+            this.label32.Text = "Project Details";
             // 
             // Form1
             // 
@@ -1084,6 +1144,11 @@
         private System.Windows.Forms.TextBox EmployeeID1textbox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView ProjectDetails;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label20;
     }
 }
 
