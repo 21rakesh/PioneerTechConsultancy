@@ -178,7 +178,7 @@
             this.tabPage1.Size = new System.Drawing.Size(1147, 701);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Employee_Details";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            
             // 
             // Clear
             // 
@@ -282,7 +282,7 @@
             this.FirstNametextbox.Name = "FirstNametextbox";
             this.FirstNametextbox.Size = new System.Drawing.Size(224, 27);
             this.FirstNametextbox.TabIndex = 10;
-            this.FirstNametextbox.TextChanged += new System.EventHandler(this.FirstNametextbox_TextChanged);
+            
             // 
             // label14
             // 
@@ -383,7 +383,7 @@
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "First Name\r\n";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+      
             // 
             // tabPage2
             // 
@@ -946,7 +946,7 @@
             this.label30.Size = new System.Drawing.Size(109, 20);
             this.label30.TabIndex = 4;
             this.label30.Text = "EmployeeID";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
+            
             // 
             // CompanyDetails
             // 
@@ -957,7 +957,7 @@
             this.CompanyDetails.RowTemplate.Height = 24;
             this.CompanyDetails.Size = new System.Drawing.Size(517, 150);
             this.CompanyDetails.TabIndex = 3;
-            this.CompanyDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
+            
             // 
             // TechnicalDetails
             // 

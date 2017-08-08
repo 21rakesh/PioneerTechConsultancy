@@ -17,32 +17,7 @@ namespace PioneerTestConsultancySystem
         {
             InitializeComponent();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CompanyID_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -115,17 +90,6 @@ namespace PioneerTestConsultancySystem
             HomeCountrytextbox.Text = String.Empty;
             Zipcodetextbox.Text = String.Empty;
         }
-
-        private void FirstNametextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             try
@@ -254,11 +218,6 @@ namespace PioneerTestConsultancySystem
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
            
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
