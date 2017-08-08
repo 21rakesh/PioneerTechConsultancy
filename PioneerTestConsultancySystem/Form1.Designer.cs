@@ -854,7 +854,7 @@
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "EmployerName";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+         
             // 
             // tabPage6
             // 

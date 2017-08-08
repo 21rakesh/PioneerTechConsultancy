@@ -37,7 +37,7 @@ namespace PioneerTestConsultancySystem
                     " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = @"INSERT INTO Employee_Details
+                string sqlemployeedetails= @"INSERT INTO Employee_Details
                                             (First_Name,
                                             Last_Name,
                                             Email,
@@ -61,22 +61,16 @@ namespace PioneerTestConsultancySystem
                                             ""+"'"+Home_Country+"'," +
                                             ""+ZipCode+")";
                 SqlCommand command;
-                command = new SqlCommand(q, mysqlconnection);
+                command = new SqlCommand(sqlemployeedetails, mysqlconnection);
                 command.ExecuteNonQuery();
                 mysqlconnection.Close();
             }
             catch(Exception ex)
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
-            }
-           
-             
+            }            
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void Clear_Click(object sender, EventArgs e)
         {
             FirstNametextbox.Text=String.Empty;
@@ -99,44 +93,44 @@ namespace PioneerTestConsultancySystem
                        " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = ("SELECT * FROM Employee_Details WHERE EmployeeID="+EmployeeID);
-                string r = ("SELECT * FROM Education_Details WHERE EmployeeID="+EmployeeID);
-                string w = ("SELECT * FROM Technical_Details WHERE EmployeeID="+EmployeeID);
-                string p = ("SELECT * FROM Company_Details WHERE EmployeeID=" + EmployeeID);
-                string c= ("SELECT * FROM Project_Details WHERE EmployeeID=" + EmployeeID);
+                string sqlEmployeeDetails = ("SELECT * FROM Employee_Details WHERE EmployeeID="+EmployeeID);
+                string sqlEducationDetails = ("SELECT * FROM Education_Details WHERE EmployeeID="+EmployeeID);
+                string sqlTechnicalDetails = ("SELECT * FROM Technical_Details WHERE EmployeeID="+EmployeeID);
+                string sqlCompanyDetails = ("SELECT * FROM Company_Details WHERE EmployeeID=" + EmployeeID);
+                string sqlProjectDetails= ("SELECT * FROM Project_Details WHERE EmployeeID=" + EmployeeID);
                 SqlCommand command;
-                command = new SqlCommand(q,mysqlconnection);
-                SqlDataReader Data = command.ExecuteReader();
-                BindingSource s = new BindingSource();
-                s.DataSource = Data;
-                EmployeeDetails.DataSource = s;
-                Data.Close();
+                command = new SqlCommand(sqlEmployeeDetails,mysqlconnection);
+                SqlDataReader employeeData = command.ExecuteReader();
+                BindingSource gridview = new BindingSource();
+                gridview.DataSource = employeeData;
+                EmployeeDetails.DataSource = gridview;
+                employeeData.Close();
                // string r = ("SELECT * FROM Education_Details WHERE EmployeeID=" + EmployeeID);
                 
-                command = new SqlCommand(r, mysqlconnection);
-                SqlDataReader sd = command.ExecuteReader();
-                BindingSource b = new BindingSource();
-                b.DataSource = sd;
-                EducationalDetails.DataSource = b;
-                sd.Close();
-                command = new SqlCommand(w, mysqlconnection);
-                SqlDataReader dr= command.ExecuteReader();
-                BindingSource a = new BindingSource();
-                a.DataSource = dr;
-                TechnicalDetails.DataSource = a;
-                dr.Close();
-                command = new SqlCommand(p, mysqlconnection);
-                SqlDataReader rd = command.ExecuteReader();
-                BindingSource i= new BindingSource();
-                i.DataSource = rd;
-                CompanyDetails.DataSource = i;
-                rd.Close();
-                command = new SqlCommand(c, mysqlconnection);
-                SqlDataReader cd = command.ExecuteReader();
-                BindingSource v = new BindingSource();
-                v.DataSource = cd;
-                ProjectDetails.DataSource = v;
-                cd.Close();
+                command = new SqlCommand(sqlEducationDetails, mysqlconnection);
+                SqlDataReader eduacationaldata = command.ExecuteReader();
+                BindingSource educationalgridview = new BindingSource();
+                educationalgridview.DataSource = eduacationaldata;
+                EducationalDetails.DataSource = educationalgridview;
+                eduacationaldata.Close();
+                command = new SqlCommand(sqlTechnicalDetails, mysqlconnection);
+                SqlDataReader technicaldata= command.ExecuteReader();
+                BindingSource technicalgridview = new BindingSource();
+                technicalgridview.DataSource = technicaldata;
+                TechnicalDetails.DataSource = technicalgridview;
+                technicaldata.Close();
+                command = new SqlCommand(sqlCompanyDetails, mysqlconnection);
+                SqlDataReader companydata = command.ExecuteReader();
+                BindingSource companygridview= new BindingSource();
+                companygridview.DataSource = companydata;
+                CompanyDetails.DataSource = companygridview;
+                companydata.Close();
+                command = new SqlCommand(sqlProjectDetails, mysqlconnection);
+                SqlDataReader  projectdata= command.ExecuteReader();
+                BindingSource projectgridview = new BindingSource();
+                projectgridview.DataSource =projectdata;
+                ProjectDetails.DataSource = projectgridview;
+                projectdata.Close();
 
             }
             catch(Exception ex)
@@ -156,9 +150,9 @@ namespace PioneerTestConsultancySystem
                    " Integrated Security=True";
             SqlConnection mysqlconnection = new SqlConnection(connectionstring);
             mysqlconnection.Open();
-                string q = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('"+CourseType+"',"+"'"+CourseSpecialisation+"',"+"'"+YearOfPass+"')";
+                string sqleducationdetails = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('"+CourseType+"',"+"'"+CourseSpecialisation+"',"+"'"+YearOfPass+"')";
             SqlCommand command;
-            command = new SqlCommand(q, mysqlconnection);
+            command = new SqlCommand(sqleducationdetails, mysqlconnection);
             command.ExecuteNonQuery();
             mysqlconnection.Close();
             }
@@ -181,9 +175,9 @@ namespace PioneerTestConsultancySystem
                    " Integrated Security=True";
             SqlConnection mysqlconnection = new SqlConnection(connectionstring);
             mysqlconnection.Open();
-            string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('"+UI+"',"+"'"+Programming_Languages+"',"+"'"+ORM_Technologies+"',"+"'"+Databases+"')";
+            string sqltechnicaldetails = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('"+UI+"',"+"'"+Programming_Languages+"',"+"'"+ORM_Technologies+"',"+"'"+Databases+"')";
             SqlCommand command;
-            command = new SqlCommand(q, mysqlconnection);
+            command = new SqlCommand(sqltechnicaldetails, mysqlconnection);
             command.ExecuteNonQuery();
             mysqlconnection.Close();
             }
@@ -207,9 +201,9 @@ namespace PioneerTestConsultancySystem
                    " Integrated Security=True";
             SqlConnection mysqlconnection = new SqlConnection(connectionstring);
             mysqlconnection.Open();
-            string q = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('"+Employer_Name+"',"+""+Contact_NUmber+"," + "'"+Location+"',"+"'"+Website+"')";
+            string sqlcompanydetails = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('"+Employer_Name+"',"+""+Contact_NUmber+"," + "'"+Location+"',"+"'"+Website+"')";
             SqlCommand command;
-            command = new SqlCommand(q, mysqlconnection);
+            command = new SqlCommand(sqlcompanydetails, mysqlconnection);
             command.ExecuteNonQuery();
             mysqlconnection.Close();
             }
@@ -234,9 +228,9 @@ namespace PioneerTestConsultancySystem
                    " Integrated Security=True";
             SqlConnection mysqlconnection = new SqlConnection(connectionstring);
             mysqlconnection.Open();
-            string q = @"INSERT INTO Project_Details(EmployeeID,Project_Name,Client_Name,Location,Roles)VALUES("+EmployeeID+","+"'"+Project_Name+"',"+"'"+Client_Name+"',"+"'"+Location+"',"+"'"+Roles+"')";
+            string sqlprojectdetails = @"INSERT INTO Project_Details(EmployeeID,Project_Name,Client_Name,Location,Roles)VALUES("+EmployeeID+","+"'"+Project_Name+"',"+"'"+Client_Name+"',"+"'"+Location+"',"+"'"+Roles+"')";
             SqlCommand command;
-            command = new SqlCommand(q, mysqlconnection);
+            command = new SqlCommand(sqlprojectdetails, mysqlconnection);
             command.ExecuteNonQuery();
             mysqlconnection.Close();
             }
