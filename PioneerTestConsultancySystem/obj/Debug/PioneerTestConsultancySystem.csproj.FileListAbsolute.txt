@@ -1,0 +1,9 @@
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerTestConsultancySystem.exe.config
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerTestConsultancySystem.exe
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerTestConsultancySystem.pdb
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.csprojResolveAssemblyReference.cache
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.Form1.resources
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.Properties.Resources.resources
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.csproj.GenerateResource.Cache
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.exe
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.pdb
