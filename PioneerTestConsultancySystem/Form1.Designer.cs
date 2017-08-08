@@ -53,7 +53,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Clear1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.YearOfPasstextbox = new System.Windows.Forms.TextBox();
             this.CourseSpecialisationtextbox = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Clear2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Databasestextbox = new System.Windows.Forms.TextBox();
             this.ORMtextbox = new System.Windows.Forms.TextBox();
@@ -73,7 +73,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
+            this.EmployeeID1textbox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Clear3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Roletextbox = new System.Windows.Forms.TextBox();
             this.ProjectLocationtextbox = new System.Windows.Forms.TextBox();
@@ -84,7 +86,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
+            this.Clear4 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.Websitetextbox = new System.Windows.Forms.TextBox();
             this.Locationtextbox = new System.Windows.Forms.TextBox();
@@ -97,6 +99,7 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.ProjectDetails = new System.Windows.Forms.DataGridView();
             this.EducationalDetails = new System.Windows.Forms.DataGridView();
             this.Show = new System.Windows.Forms.Button();
             this.EmployeeIDtextbox = new System.Windows.Forms.TextBox();
@@ -104,9 +107,6 @@
             this.CompanyDetails = new System.Windows.Forms.DataGridView();
             this.TechnicalDetails = new System.Windows.Forms.DataGridView();
             this.EmployeeDetails = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
-            this.EmployeeID1textbox = new System.Windows.Forms.TextBox();
-            this.ProjectDetails = new System.Windows.Forms.DataGridView();
             this.Technical_Details.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -114,11 +114,11 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EducationalDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CompanyDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TechnicalDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // Technical_Details
@@ -383,7 +383,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage2.Controls.Add(this.button6);
+            this.tabPage2.Controls.Add(this.Clear1);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.YearOfPasstextbox);
             this.tabPage2.Controls.Add(this.CourseSpecialisationtextbox);
@@ -399,15 +399,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Educational_Details";
             // 
-            // button6
+            // Clear1
             // 
-            this.button6.ForeColor = System.Drawing.Color.Maroon;
-            this.button6.Location = new System.Drawing.Point(583, 341);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 42);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Clear1.ForeColor = System.Drawing.Color.Maroon;
+            this.Clear1.Location = new System.Drawing.Point(583, 341);
+            this.Clear1.Name = "Clear1";
+            this.Clear1.Size = new System.Drawing.Size(140, 42);
+            this.Clear1.TabIndex = 9;
+            this.Clear1.Text = "Clear";
+            this.Clear1.UseVisualStyleBackColor = true;
+            this.Clear1.Click += new System.EventHandler(this.button6_Click);
             // 
             // button4
             // 
@@ -481,7 +482,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage3.Controls.Add(this.button7);
+            this.tabPage3.Controls.Add(this.Clear2);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.Databasestextbox);
             this.tabPage3.Controls.Add(this.ORMtextbox);
@@ -500,15 +501,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Technical_Details";
             // 
-            // button7
+            // Clear2
             // 
-            this.button7.ForeColor = System.Drawing.Color.Maroon;
-            this.button7.Location = new System.Drawing.Point(536, 359);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 41);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Clear";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Clear2.ForeColor = System.Drawing.Color.Maroon;
+            this.Clear2.Location = new System.Drawing.Point(536, 359);
+            this.Clear2.Name = "Clear2";
+            this.Clear2.Size = new System.Drawing.Size(136, 41);
+            this.Clear2.TabIndex = 11;
+            this.Clear2.Text = "Clear";
+            this.Clear2.UseVisualStyleBackColor = true;
+            this.Clear2.Click += new System.EventHandler(this.Clear2_Click);
             // 
             // button3
             // 
@@ -603,7 +605,7 @@
             this.tabPage4.BackColor = System.Drawing.Color.RosyBrown;
             this.tabPage4.Controls.Add(this.EmployeeID1textbox);
             this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.Clear3);
             this.tabPage4.Controls.Add(this.button5);
             this.tabPage4.Controls.Add(this.Roletextbox);
             this.tabPage4.Controls.Add(this.ProjectLocationtextbox);
@@ -622,15 +624,33 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Project_Details";
             // 
-            // button8
+            // EmployeeID1textbox
             // 
-            this.button8.ForeColor = System.Drawing.Color.Maroon;
-            this.button8.Location = new System.Drawing.Point(548, 375);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(117, 49);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Clear";
-            this.button8.UseVisualStyleBackColor = true;
+            this.EmployeeID1textbox.Location = new System.Drawing.Point(460, 112);
+            this.EmployeeID1textbox.Name = "EmployeeID1textbox";
+            this.EmployeeID1textbox.Size = new System.Drawing.Size(222, 27);
+            this.EmployeeID1textbox.TabIndex = 15;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label15.Location = new System.Drawing.Point(160, 115);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(109, 20);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "EmployeeID";
+            // 
+            // Clear3
+            // 
+            this.Clear3.ForeColor = System.Drawing.Color.Maroon;
+            this.Clear3.Location = new System.Drawing.Point(548, 375);
+            this.Clear3.Name = "Clear3";
+            this.Clear3.Size = new System.Drawing.Size(117, 49);
+            this.Clear3.TabIndex = 13;
+            this.Clear3.Text = "Clear";
+            this.Clear3.UseVisualStyleBackColor = true;
+            this.Clear3.Click += new System.EventHandler(this.Clear3_Click);
             // 
             // button5
             // 
@@ -723,7 +743,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage5.Controls.Add(this.button10);
+            this.tabPage5.Controls.Add(this.Clear4);
             this.tabPage5.Controls.Add(this.button9);
             this.tabPage5.Controls.Add(this.Websitetextbox);
             this.tabPage5.Controls.Add(this.Locationtextbox);
@@ -740,15 +760,16 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Company_Details";
             // 
-            // button10
+            // Clear4
             // 
-            this.button10.ForeColor = System.Drawing.Color.Maroon;
-            this.button10.Location = new System.Drawing.Point(552, 262);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(103, 43);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Clear";
-            this.button10.UseVisualStyleBackColor = true;
+            this.Clear4.ForeColor = System.Drawing.Color.Maroon;
+            this.Clear4.Location = new System.Drawing.Point(552, 262);
+            this.Clear4.Name = "Clear4";
+            this.Clear4.Size = new System.Drawing.Size(103, 43);
+            this.Clear4.TabIndex = 9;
+            this.Clear4.Text = "Clear";
+            this.Clear4.UseVisualStyleBackColor = true;
+            this.Clear4.Click += new System.EventHandler(this.Clear4_Click);
             // 
             // button9
             // 
@@ -868,6 +889,15 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "DashBoard";
             // 
+            // ProjectDetails
+            // 
+            this.ProjectDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProjectDetails.Location = new System.Drawing.Point(49, 509);
+            this.ProjectDetails.Name = "ProjectDetails";
+            this.ProjectDetails.RowTemplate.Height = 24;
+            this.ProjectDetails.Size = new System.Drawing.Size(517, 150);
+            this.ProjectDetails.TabIndex = 8;
+            // 
             // EducationalDetails
             // 
             this.EducationalDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -935,32 +965,6 @@
             this.EmployeeDetails.Size = new System.Drawing.Size(517, 200);
             this.EmployeeDetails.TabIndex = 1;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label15.Location = new System.Drawing.Point(160, 115);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 20);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "EmployeeID";
-            // 
-            // EmployeeID1textbox
-            // 
-            this.EmployeeID1textbox.Location = new System.Drawing.Point(460, 112);
-            this.EmployeeID1textbox.Name = "EmployeeID1textbox";
-            this.EmployeeID1textbox.Size = new System.Drawing.Size(222, 27);
-            this.EmployeeID1textbox.TabIndex = 15;
-            // 
-            // ProjectDetails
-            // 
-            this.ProjectDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProjectDetails.Location = new System.Drawing.Point(49, 509);
-            this.ProjectDetails.Name = "ProjectDetails";
-            this.ProjectDetails.RowTemplate.Height = 24;
-            this.ProjectDetails.Size = new System.Drawing.Size(517, 150);
-            this.ProjectDetails.TabIndex = 8;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -986,11 +990,11 @@
             this.tabPage5.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EducationalDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CompanyDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TechnicalDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectDetails)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1053,10 +1057,10 @@
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Clear1;
+        private System.Windows.Forms.Button Clear2;
+        private System.Windows.Forms.Button Clear3;
+        private System.Windows.Forms.Button Clear4;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox Websitetextbox;
         private System.Windows.Forms.TextBox Locationtextbox;

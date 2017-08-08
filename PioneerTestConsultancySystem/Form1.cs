@@ -107,7 +107,16 @@ namespace PioneerTestConsultancySystem
 
         private void Clear_Click(object sender, EventArgs e)
         {
-
+            FirstNametextbox.Text=String.Empty;
+            LastNametextbox.Text=String.Empty;
+            Emailtextbox.Text = String.Empty;
+            MobileNumbertextbox.Text = String.Empty;
+            AlternateMobileNumbertextbox.Text = String.Empty;
+            Address1textbox.Text = String.Empty;
+            Address2textbox.Text = String.Empty;
+            CurrentCountrytextbox.Text = String.Empty;
+            HomeCountrytextbox.Text = String.Empty;
+            Zipcodetextbox.Text = String.Empty;
         }
 
         private void FirstNametextbox_TextChanged(object sender, EventArgs e)
@@ -292,6 +301,38 @@ namespace PioneerTestConsultancySystem
             {
                 
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            CourseTypetextbox.Text = String.Empty;
+            CourseSpecialisationtextbox.Text = String.Empty;
+            YearOfPasstextbox.Text = String.Empty;
+        }
+
+        private void Clear2_Click(object sender, EventArgs e)
+        {
+            UItextbox.Text = String.Empty;
+            Programmingtextbox.Text = String.Empty;
+            ORMtextbox.Text = String.Empty;
+            Databasestextbox.Text = String.Empty;
+        }
+
+        private void Clear3_Click(object sender, EventArgs e)
+        {
+            EmployeeID1textbox.Text = String.Empty;
+            ProjectNametextbox.Text = String.Empty;
+            ClientNametextbox.Text = String.Empty;
+            ProjectLocationtextbox.Text = String.Empty;
+            Roletextbox.Text = String.Empty;
+        }
+
+        private void Clear4_Click(object sender, EventArgs e)
+        {
+            Employertextbox.Text = String.Empty;
+            ContactNumbertextbox.Text = String.Empty;
+            Locationtextbox.Text = String.Empty;
+            Websitetextbox.Text = String.Empty;
         }
     }
 }
