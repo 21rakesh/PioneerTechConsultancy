@@ -891,6 +891,7 @@
             // 
             // ProjectDetails
             // 
+            this.ProjectDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ProjectDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProjectDetails.Location = new System.Drawing.Point(49, 509);
             this.ProjectDetails.Name = "ProjectDetails";
@@ -900,6 +901,7 @@
             // 
             // EducationalDetails
             // 
+            this.EducationalDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EducationalDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EducationalDetails.Location = new System.Drawing.Point(610, 312);
             this.EducationalDetails.Name = "EducationalDetails";
@@ -938,6 +940,7 @@
             // 
             // CompanyDetails
             // 
+            this.CompanyDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CompanyDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CompanyDetails.Location = new System.Drawing.Point(49, 312);
             this.CompanyDetails.Name = "CompanyDetails";
@@ -948,6 +951,7 @@
             // 
             // TechnicalDetails
             // 
+            this.TechnicalDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.TechnicalDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TechnicalDetails.Location = new System.Drawing.Point(610, 91);
             this.TechnicalDetails.Name = "TechnicalDetails";

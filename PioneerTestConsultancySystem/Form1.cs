@@ -94,10 +94,7 @@ namespace PioneerTestConsultancySystem
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
-            finally
-            {
-                
-            }
+           
              
         }
         private void label1_Click(object sender, EventArgs e)
@@ -205,10 +202,7 @@ namespace PioneerTestConsultancySystem
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
-            finally
-            {
-                
-            }
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -233,10 +227,7 @@ namespace PioneerTestConsultancySystem
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
-            finally
-            {
-                
-            }
+           
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -262,10 +253,7 @@ namespace PioneerTestConsultancySystem
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
-            finally
-            {
-                
-            }
+           
         }
 
         private void label30_Click(object sender, EventArgs e)
@@ -297,10 +285,7 @@ namespace PioneerTestConsultancySystem
             {
                 MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
             }
-            finally
-            {
-                
-            }
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
