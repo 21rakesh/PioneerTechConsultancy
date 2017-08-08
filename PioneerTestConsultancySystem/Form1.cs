@@ -329,10 +329,12 @@ namespace PioneerTestConsultancySystem
 
         private void Clear4_Click(object sender, EventArgs e)
         {
+
             Employertextbox.Text = String.Empty;
             ContactNumbertextbox.Text = String.Empty;
             Locationtextbox.Text = String.Empty;
             Websitetextbox.Text = String.Empty;
+            MessageBox.Show("You have cleared:");
         }
     }
 }
