@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTestConsultancySyste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerDataAccess", "PioneerDataAccess\PioneerDataAccess.csproj", "{4DE87A9C-4163-4145-B635-087D075843F1}"
 EndProject
+Project("{E729F059-12D4-455F-A2A4-FDA8DD25E08A}") = "PioneerConultantSetup", "PioneerConultantSetup\PioneerConultantSetup.isproj", "{C0A67AD0-2680-4D01-A1FD-35E0C427B120}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4DE87A9C-4163-4145-B635-087D075843F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DE87A9C-4163-4145-B635-087D075843F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DE87A9C-4163-4145-B635-087D075843F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A67AD0-2680-4D01-A1FD-35E0C427B120}.Debug|Any CPU.ActiveCfg = Debug
+		{C0A67AD0-2680-4D01-A1FD-35E0C427B120}.Debug|Any CPU.Build.0 = Debug
+		{C0A67AD0-2680-4D01-A1FD-35E0C427B120}.Release|Any CPU.ActiveCfg = Release
+		{C0A67AD0-2680-4D01-A1FD-35E0C427B120}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
