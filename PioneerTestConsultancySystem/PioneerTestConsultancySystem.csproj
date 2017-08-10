@@ -87,6 +87,10 @@
       <Project>{4DE87A9C-4163-4145-B635-087D075843F1}</Project>
       <Name>PioneerDataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PioneerTestModels\PioneerTest.Models.csproj">
+      <Project>{78262EB0-92A0-4D7C-A94B-38101346F88C}</Project>
+      <Name>PioneerTest.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

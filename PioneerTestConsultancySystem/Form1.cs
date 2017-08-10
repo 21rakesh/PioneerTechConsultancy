@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using PioneerDataAccess;
+using PioneerTest.Models;
 
 namespace PioneerTestConsultancySystem
 {
@@ -21,21 +22,29 @@ namespace PioneerTestConsultancySystem
         
         private void button1_Click(object sender, EventArgs e)
         {
-            
-                string First_Name = FirstNametextbox.Text;
-                string Last_Name = LastNametextbox.Text;
-                string Email = Emailtextbox.Text;
-                long Mobile_Number = Convert.ToInt64(MobileNumbertextbox.Text);
-                long AlternateMobileNumber = Convert.ToInt64(AlternateMobileNumbertextbox.Text);
-                string Address1 = Address1textbox.Text;
-                string Address2 = Address2textbox.Text;
-                string Current_Country = CurrentCountrytextbox.Text;
-                string Home_Country = HomeCountrytextbox.Text;
-                int ZipCode = Convert.ToInt32(Zipcodetextbox.Text);
-            EmployeeDataAccess employee = new EmployeeDataAccess();
-            employee.SaveEmployee(First_Name,Last_Name,Email,Mobile_Number,AlternateMobileNumber,Address1,Address2,
-                Current_Country,Home_Country,ZipCode);
-            
+            try
+            {
+                EmployeeDetailsModel emp = new EmployeeDetailsModel()
+                {
+                    First_Name = FirstNametextbox.Text,
+                    Last_Name = LastNametextbox.Text,
+                    Email = Emailtextbox.Text,
+                    Mobile_Number = Convert.ToInt64(MobileNumbertextbox.Text),
+                    AlternateMobileNumber = Convert.ToInt64(AlternateMobileNumbertextbox.Text),
+                    Address1 = Address1textbox.Text,
+                    Address2 = Address2textbox.Text,
+                    Current_Country = CurrentCountrytextbox.Text,
+                    Home_Country = HomeCountrytextbox.Text,
+                    ZipCode = Convert.ToInt32(Zipcodetextbox.Text),
+
+                };
+                EmployeeDataAccess employee = new EmployeeDataAccess();
+                employee.SaveEmployee(emp);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter the values:");
+            }
 
 
         }
@@ -57,7 +66,7 @@ namespace PioneerTestConsultancySystem
         {
             try
             {
-                int EmployeeID = Convert.ToInt32(EmployeeIDtextbox.Text);
+                int EmployeeID = Convert.ToInt32(EmployeeComboBox.Text);
                 string connectionstring = "Data Source=RAKI;Initial Catalog=PioneerEmployeeDB;" +
                        " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
@@ -112,48 +121,82 @@ namespace PioneerTestConsultancySystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string CourseType = CourseTypetextbox.Text;
-            string CourseSpecialisation = CourseSpecialisationtextbox.Text;
-            int YearOfPass = Convert.ToInt32(YearOfPasstextbox.Text);
-            EducationDataAccess education = new EducationDataAccess();
-            education.SaveEducation(CourseType, CourseSpecialisation, YearOfPass);
+            try
+            {
+                EducationDetailsModel edu = new EducationDetailsModel()
+                {
+                    CourseType = CourseTypetextbox.Text,
+                    CourseSpecialisation = CourseSpecialisationtextbox.Text,
+                    YearOfPass = Convert.ToInt32(YearOfPasstextbox.Text),
+                };
+                EducationDataAccess education = new EducationDataAccess();
+                education.SaveEducation(edu);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Please enter the values:");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string UI = UItextbox.Text;
-            string Programming_Languages = Programmingtextbox.Text;
-            string ORM_Technologies = ORMtextbox.Text;
-            string Databases = Databasestextbox.Text;
-            TechnicalDataAccess technical = new TechnicalDataAccess();
-            technical.SaveTechnical(UI, Programming_Languages, ORM_Technologies, Databases);
-           
+            try
+            {
+                TechnicalDetailsModels TDModel = new TechnicalDetailsModels()
+                {
+                UI = UItextbox.Text,
+                Programming_Languages = Programmingtextbox.Text,
+                ORM_Technologies = ORMtextbox.Text,
+                Databases = Databasestextbox.Text,
+                };
+                TechnicalDataAccess technical = new TechnicalDataAccess();
+                technical.SaveTechnical(TDModel);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Please enter the values:");
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
-        { 
-            string Employer_Name = Employertextbox.Text;
-            long Contact_Number = Convert.ToInt64(ContactNumbertextbox.Text);
-            string Location = Locationtextbox.Text;
-            string Website = Websitetextbox.Text;
-            string Databases = Databasestextbox.Text;
-            CompanyDataAccess company = new CompanyDataAccess();
-            company.SaveCompany(Employer_Name, Contact_Number, Location, Website, Databases);
-           
+        {
+            try
+            {
+                CompanyDetailsModel com = new CompanyDetailsModel()
+                {
+                Employer_Name = Employertextbox.Text,
+                Contact_Number = Convert.ToInt64(ContactNumbertextbox.Text),
+                Location = Locationtextbox.Text,
+                Website = Websitetextbox.Text,
+                };
+                CompanyDataAccess company = new CompanyDataAccess();
+                company.SaveCompany(com);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Please enter the values:");
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
-            int EmployeeID = Convert.ToInt32(EmployeeID1textbox.Text);
-            string Project_Name = ProjectNametextbox.Text;
-            string Client_Name = ClientNametextbox.Text;
-            string Location = ProjectLocationtextbox.Text;
-            string Roles = Roletextbox.Text;
-            string Databases = Databasestextbox.Text;
-            ProjectDataAccess project = new ProjectDataAccess();
-            project.SaveProject(EmployeeID, Project_Name, Client_Name, Location, Roles, Databases);
-            
+            try
+            {
+                ProjectDetailsModel PDModel = new ProjectDetailsModel()
+                {
+                EmployeeID = Convert.ToInt32(EmployeeID1textbox.Text),
+                Project_Name = ProjectNametextbox.Text,
+                Client_Name = ClientNametextbox.Text,
+                Location = ProjectLocationtextbox.Text,
+                Roles = Roletextbox.Text,
+                };
+                ProjectDataAccess project = new ProjectDataAccess();
+                project.SaveProject(PDModel);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter the values:");
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -189,5 +232,7 @@ namespace PioneerTestConsultancySystem
             Websitetextbox.Text = String.Empty;
             MessageBox.Show("You have cleared:");
         }
+
+      
     }
 }

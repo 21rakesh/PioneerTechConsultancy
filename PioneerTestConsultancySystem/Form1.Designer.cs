@@ -99,19 +99,19 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.ProjectDetails = new System.Windows.Forms.DataGridView();
             this.EducationalDetails = new System.Windows.Forms.DataGridView();
             this.Show = new System.Windows.Forms.Button();
-            this.EmployeeIDtextbox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.CompanyDetails = new System.Windows.Forms.DataGridView();
             this.TechnicalDetails = new System.Windows.Forms.DataGridView();
             this.EmployeeDetails = new System.Windows.Forms.DataGridView();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.EmployeeComboBox = new System.Windows.Forms.ComboBox();
             this.Technical_Details.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -178,7 +178,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1147, 701);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Employee_Details";
-            
             // 
             // Clear
             // 
@@ -282,7 +281,6 @@
             this.FirstNametextbox.Name = "FirstNametextbox";
             this.FirstNametextbox.Size = new System.Drawing.Size(224, 27);
             this.FirstNametextbox.TabIndex = 10;
-            
             // 
             // label14
             // 
@@ -383,7 +381,6 @@
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "First Name\r\n";
-      
             // 
             // tabPage2
             // 
@@ -854,7 +851,6 @@
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "EmployerName";
-         
             // 
             // tabPage6
             // 
@@ -879,6 +875,7 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPage8.Controls.Add(this.EmployeeComboBox);
             this.tabPage8.Controls.Add(this.label32);
             this.tabPage8.Controls.Add(this.label31);
             this.tabPage8.Controls.Add(this.label25);
@@ -887,7 +884,6 @@
             this.tabPage8.Controls.Add(this.ProjectDetails);
             this.tabPage8.Controls.Add(this.EducationalDetails);
             this.tabPage8.Controls.Add(this.Show);
-            this.tabPage8.Controls.Add(this.EmployeeIDtextbox);
             this.tabPage8.Controls.Add(this.label30);
             this.tabPage8.Controls.Add(this.CompanyDetails);
             this.tabPage8.Controls.Add(this.TechnicalDetails);
@@ -898,6 +894,56 @@
             this.tabPage8.Size = new System.Drawing.Size(1147, 701);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "DashBoard";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Olive;
+            this.label32.Location = new System.Drawing.Point(53, 522);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(135, 20);
+            this.label32.TabIndex = 13;
+            this.label32.Text = "Project Details";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Olive;
+            this.label31.Location = new System.Drawing.Point(614, 315);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(173, 20);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "Educational Details";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Olive;
+            this.label25.Location = new System.Drawing.Point(49, 315);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(152, 20);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "Company Details";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Olive;
+            this.label24.Location = new System.Drawing.Point(610, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(156, 20);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Technical Details";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.Olive;
+            this.label20.Location = new System.Drawing.Point(45, 68);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(156, 20);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Employee Details";
             // 
             // ProjectDetails
             // 
@@ -930,13 +976,6 @@
             this.Show.UseVisualStyleBackColor = true;
             this.Show.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // EmployeeIDtextbox
-            // 
-            this.EmployeeIDtextbox.Location = new System.Drawing.Point(259, 22);
-            this.EmployeeIDtextbox.Name = "EmployeeIDtextbox";
-            this.EmployeeIDtextbox.Size = new System.Drawing.Size(142, 27);
-            this.EmployeeIDtextbox.TabIndex = 5;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -946,7 +985,6 @@
             this.label30.Size = new System.Drawing.Size(109, 20);
             this.label30.TabIndex = 4;
             this.label30.Text = "EmployeeID";
-            
             // 
             // CompanyDetails
             // 
@@ -957,7 +995,6 @@
             this.CompanyDetails.RowTemplate.Height = 24;
             this.CompanyDetails.Size = new System.Drawing.Size(517, 150);
             this.CompanyDetails.TabIndex = 3;
-            
             // 
             // TechnicalDetails
             // 
@@ -979,55 +1016,13 @@
             this.EmployeeDetails.Size = new System.Drawing.Size(517, 200);
             this.EmployeeDetails.TabIndex = 1;
             // 
-            // label20
+            // EmployeeComboBox
             // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.Color.Olive;
-            this.label20.Location = new System.Drawing.Point(45, 68);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(156, 20);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Employee Details";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.Color.Olive;
-            this.label24.Location = new System.Drawing.Point(610, 68);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(156, 20);
-            this.label24.TabIndex = 10;
-            this.label24.Text = "Technical Details";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.ForeColor = System.Drawing.Color.Olive;
-            this.label25.Location = new System.Drawing.Point(49, 315);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(152, 20);
-            this.label25.TabIndex = 11;
-            this.label25.Text = "Company Details";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Olive;
-            this.label31.Location = new System.Drawing.Point(614, 315);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(173, 20);
-            this.label31.TabIndex = 12;
-            this.label31.Text = "Educational Details";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Olive;
-            this.label32.Location = new System.Drawing.Point(53, 522);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(135, 20);
-            this.label32.TabIndex = 13;
-            this.label32.Text = "Project Details";
+            this.EmployeeComboBox.FormattingEnabled = true;
+            this.EmployeeComboBox.Location = new System.Drawing.Point(273, 17);
+            this.EmployeeComboBox.Name = "EmployeeComboBox";
+            this.EmployeeComboBox.Size = new System.Drawing.Size(137, 28);
+            this.EmployeeComboBox.TabIndex = 14;
             // 
             // Form1
             // 
@@ -1138,7 +1133,6 @@
         private System.Windows.Forms.DataGridView EmployeeDetails;
         private System.Windows.Forms.DataGridView CompanyDetails;
         private System.Windows.Forms.Button Show;
-        private System.Windows.Forms.TextBox EmployeeIDtextbox;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.DataGridView EducationalDetails;
         private System.Windows.Forms.TextBox EmployeeID1textbox;
@@ -1149,6 +1143,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox EmployeeComboBox;
     }
 }
 

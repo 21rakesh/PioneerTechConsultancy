@@ -9,3 +9,5 @@ C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem
 C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.pdb
 C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerDataAccess.dll
 C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerDataAccess.pdb
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerTestModels.dll
+C:\Users\raki\documents\visual studio 2017\Projects\PioneerTestConsultancySystem\PioneerTestConsultancySystem\bin\Debug\PioneerTestModels.pdb
