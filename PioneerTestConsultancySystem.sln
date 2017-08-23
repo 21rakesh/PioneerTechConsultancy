@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTestConsultancySystem", "PioneerTestConsultancySystem\PioneerTestConsultancySystem.csproj", "{ABDD5822-F5BD-41FF-B670-A1463456E692}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF} = {8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerDataAccess", "PioneerDataAccess\PioneerDataAccess.csproj", "{4DE87A9C-4163-4145-B635-087D075843F1}"
 EndProject
 Project("{E729F059-12D4-455F-A2A4-FDA8DD25E08A}") = "PioneerConultantSetup", "PioneerConultantSetup\PioneerConultantSetup.isproj", "{C0A67AD0-2680-4D01-A1FD-35E0C427B120}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTest.Models", "PioneerTestModels\PioneerTest.Models.csproj", "{78262EB0-92A0-4D7C-A94B-38101346F88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerWcfService1", "PioneerWcfService1\PioneerWcfService1.csproj", "{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{78262EB0-92A0-4D7C-A94B-38101346F88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78262EB0-92A0-4D7C-A94B-38101346F88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78262EB0-92A0-4D7C-A94B-38101346F88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAC7043-8F79-4EDF-A95C-F7CDBCBF32CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
